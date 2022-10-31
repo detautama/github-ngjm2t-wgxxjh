@@ -128,8 +128,13 @@ const Hero = () => {
 const About = () => {
   return (
     <div>
-      <Heading as="h2" size="lg" textAlign="center">
-        JEWELRY STORE
+      <Heading
+        as="h2"
+        size="lg"
+        textAlign="center"
+        fontFamily="'Gilda Display', serif"
+      >
+        Gold and Silver Collection
       </Heading>
       <Box my={5} />
       <Text textAlign="center">
