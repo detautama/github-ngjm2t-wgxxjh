@@ -25,36 +25,34 @@ const Home: NextPage = () => {
       <Box my={10} />
       <About />
       <Box my={10} />
-      <Box display="flex" alignItems="center" gap={2} my={3}>
+      <Box
+        display="flex"
+        alignItems="center"
+        justifyContent="center"
+        gap="10px"
+      >
         <Circle size="28px" border={'1px'}>
           <Icon as={AiFillInstagram} />
         </Circle>
-        <Link href="https://www.instagram.com/deta_utama/" isExternal>
-          deta_utama
-        </Link>
-      </Box>
-      <Box display="flex" alignItems="center" gap={2} my={3}>
-        <Circle size="28px" border={'1px'}>
-          <Icon as={BsStackOverflow} />
-        </Circle>
+
         <Link
           href="https://stackoverflow.com/users/7207817/deta-utama"
           isExternal
         >
-          Deta Utama
+          <Circle size="28px" border={'1px'}>
+            <Icon as={BsStackOverflow} />
+          </Circle>
         </Link>
-      </Box>
-      <Box display="flex" alignItems="center" gap={2} my={3}>
-        <Circle size="28px" border={'1px'}>
-          <Icon as={AiFillLinkedin} />
-        </Circle>
+
         <Link href="https://www.linkedin.com/in/deta-u-8bb1a7107/" isExternal>
-          Deta Utama
+          <Circle size="28px" border={'1px'}>
+            <Icon as={AiFillLinkedin} />
+          </Circle>
         </Link>
       </Box>
       <Box my={10} />
       <Box textAlign="center">
-        <p>2022 I Putu Deta Utama Putra</p>
+        <p>2022 Ayunika Silver</p>
       </Box>
       <Box my={10} />
     </Container>
@@ -64,40 +62,13 @@ const Home: NextPage = () => {
 const TopBar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
   return (
-    <Box
-      display="flex"
-      alignItems="center"
-      gap="10px"
-      justifyContent="space-between"
-    >
-      <Box display={'flex'} gap={2}>
-        <Image
-          borderRadius="full"
-          mx="auto"
-          src="/profile.jpeg"
-          height="25"
-          sizes="cover"
-        />
-        <p>Ayunika Silver</p>
-      </Box>
-      {/* {colorMode === 'dark' ? (
-        <SunIcon
-          color="yellow"
-          width="25px"
-          height="25px"
-          onClick={toggleColorMode}
-          cursor="pointer"
-        />
-      ) : (
-        <MoonIcon
-          color="purple"
-          width="25px"
-          height="25px"
-          onClick={toggleColorMode}
-          cursor="pointer"
-        />
-      )} */}
-    </Box>
+    <Image
+      borderRadius="full"
+      mx="auto"
+      src="/logo.png"
+      height="60px"
+      sizes="cover"
+    />
   );
 };
 
