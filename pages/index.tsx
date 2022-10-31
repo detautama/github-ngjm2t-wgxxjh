@@ -3,6 +3,7 @@ import {
   Button,
   Circle,
   Container,
+  Divider,
   Heading,
   Link,
   Text,
@@ -19,14 +20,11 @@ const Home: NextPage = () => {
   return (
     <Container mt={5}>
       <TopBar />
-      <Box my={10} />
+      <Box my={5} />
       <Hero />
       <Box my={10} />
       <About />
       <Box my={10} />
-      <Heading as="h3" size="lg">
-        On the web
-      </Heading>
       <Box display="flex" alignItems="center" gap={2} my={3}>
         <Circle size="28px" border={'1px'}>
           <Icon as={AiFillInstagram} />
@@ -73,10 +71,16 @@ const TopBar = () => {
       justifyContent="space-between"
     >
       <Box display={'flex'} gap={2}>
-        <Circle size="25px" backgroundColor="red" />
-        <p>Deta Utama</p>
+        <Image
+          borderRadius="full"
+          mx="auto"
+          src="/profile.jpeg"
+          height="25"
+          sizes="cover"
+        />
+        <p>Ayunika Silver</p>
       </Box>
-      {colorMode === 'dark' ? (
+      {/* {colorMode === 'dark' ? (
         <SunIcon
           color="yellow"
           width="25px"
@@ -92,7 +96,7 @@ const TopBar = () => {
           onClick={toggleColorMode}
           cursor="pointer"
         />
-      )}
+      )} */}
     </Box>
   );
 };
@@ -102,10 +106,10 @@ const Hero = () => {
     <Box>
       <Image
         mx="auto"
-        src="/hero.jpeg"
+        src="/hero1.jpeg"
         alt="Dan Abramov"
-        height="300px"
-        width="auto"
+        objectFit="cover"
+        borderRadius="16px"
       />
     </Box>
   );
@@ -114,56 +118,15 @@ const Hero = () => {
 const About = () => {
   return (
     <div>
-      <Heading as="h2" size="lg">
-        I Putu Deta Utama Putra
-      </Heading>
-      <Heading as="h3" size="md" fontWeight={'normal'}>
-        Web Developer
+      <Heading as="h2" size="lg" textAlign="center">
+        JEWELRY STORE
       </Heading>
       <Box my={5} />
-      <Image borderRadius="full" mx="auto" src="/profile.jpeg" height="150px" />
-      <Box my={5} />
-      <Text
-        textAlign="justify"
-        style={{
-          textIndent: '1em',
-        }}
-      >
-        Deta is a web developer based in Bali who interested with programming
-        from 3rd grade of senior high school. Start by creating pacman game
-        using Game Maker and blogging about tech. Now he is a Middle Web
-        Developer at Oddbit.id
+      <Text textAlign="center">
+        We will provide you with the most exquiste service
       </Text>
-      <Box my={10} />
-      <Heading as="h3" size="lg">
-        Bio
-      </Heading>
-      <Box>
-        <Box display="flex" gap={2}>
-          <Box width="20%">1997</Box>
-          <Box width="80%">Born in Denpasar</Box>
-        </Box>
-        <Box display="flex" gap={2}>
-          <Box width="20%">2017</Box>
-          <Box width="80%">Worked at Markethub.id.</Box>
-        </Box>
-        <Box display="flex" gap={2}>
-          <Box width="20%">2017</Box>
-          <Box width="80%">On The Job Training at Gringgo.id</Box>
-        </Box>
-        <Box display="flex" gap={2}>
-          <Box width="20%">2019</Box>
-          <Box width="80%">
-            Completed the Bachelor of Computer Science at STIKI INDONESIA.
-          </Box>
-        </Box>
-        <Box display="flex" gap={2}>
-          <Box width="20%">
-            <b>2018 - present</b>
-          </Box>
-          <Box width="80%">Work as Middle Web Developer at Oddbit.</Box>
-        </Box>
-      </Box>
+      <Box my={5} />
+      <Divider width="100px" mx="auto" />
     </div>
   );
 };
