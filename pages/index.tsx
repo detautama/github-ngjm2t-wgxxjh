@@ -25,7 +25,46 @@ const Home: NextPage = () => {
       <Box my={10} />
       <About />
       <Box my={10} />
-      <Box
+      <Link href="https://wa.me/085792986593" isExternal>
+        <Box
+          mx="auto"
+          textAlign="center"
+          width="70%"
+          border="1px solid black"
+          borderRadius="16px"
+          py="15px"
+        >
+          <Text fontSize="md">WhatsApp</Text>
+        </Box>
+      </Link>
+      <Box my={5} />
+      <Link href="https://www.tokopedia.com/ayunikasilver" isExternal>
+        <Box
+          mx="auto"
+          textAlign="center"
+          width="70%"
+          border="1px solid black"
+          borderRadius="16px"
+          py="15px"
+        >
+          <Text fontSize="md">Tokopedia</Text>
+        </Box>
+        <Box my={5} />
+      </Link>
+      <Link href="https://www.instagram.com/ayunikasilver/" isExternal>
+        <Box
+          mx="auto"
+          textAlign="center"
+          width="70%"
+          border="1px solid black"
+          borderRadius="16px"
+          py="15px"
+        >
+          <Text fontSize="md">Instagram</Text>
+        </Box>
+      </Link>
+      <Box my={5} />
+      {/* <Box
         display="flex"
         alignItems="center"
         justifyContent="center"
@@ -49,7 +88,7 @@ const Home: NextPage = () => {
             <Icon as={AiFillLinkedin} />
           </Circle>
         </Link>
-      </Box>
+      </Box> */}
       <Box my={10} />
       <Box textAlign="center">
         <p>2022 Ayunika Silver</p>
