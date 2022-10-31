@@ -22,9 +22,9 @@ const Home: NextPage = () => {
       <TopBar />
       <Box my={5} />
       <Hero />
-      <Box my={10} />
+      <Box my={5} />
       <About />
-      <Box my={10} />
+      <Box my={5} />
       <Link href="https://wa.me/085792986593" isExternal>
         <Box
           mx="auto"
